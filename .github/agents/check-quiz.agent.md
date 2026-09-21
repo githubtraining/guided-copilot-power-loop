@@ -1,8 +1,17 @@
 ---
 name: check-quiz
 description: Check the finished quiz without changing it
-agent: ask
+tools: ['search']
 model: GPT-5.6 Terra
+handoffs:
+  - label: Fix one problem
+    agent: fix-one-problem
+    prompt: Fix the first item marked FIX above.
+    send: false
+  - label: Add a finishing touch
+    agent: add-finish
+    prompt: Add one finishing touch now that the quiz passes every check.
+    send: false
 ---
 
 # Check my finished quiz
@@ -41,4 +50,4 @@ Use one short row per check.
 Finish with either:
 
 - **Ready to show**
-- **Run `/fix-one-problem` for the first item marked FIX**
+- **Select the "Fix one problem" handoff for the first item marked FIX**

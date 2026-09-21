@@ -1,8 +1,13 @@
 ---
 name: build-quiz
 description: Add the JavaScript that makes the quiz work
-agent: agent
+tools: ['edit', 'search', 'runCommands']
 model: GPT-5.6 Terra
+handoffs:
+  - label: Check my quiz
+    agent: check-quiz
+    prompt: Check the finished quiz against the requirements list.
+    send: false
 ---
 
 # Make the quiz work

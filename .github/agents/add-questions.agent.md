@@ -1,9 +1,14 @@
 ---
 name: add-questions
 description: Create the question data chosen by the student
-agent: agent
+tools: ['edit', 'search', 'runCommands']
 model: GPT-5.6 Terra
 argument-hint: "Give four IDs from QUESTION-BANK.md"
+handoffs:
+  - label: Make the quiz work
+    agent: build-quiz
+    prompt: Add the JavaScript behaviour now that the page and questions exist.
+    send: false
 ---
 
 # Add my questions

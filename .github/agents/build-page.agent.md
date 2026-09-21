@@ -1,9 +1,14 @@
 ---
 name: build-page
 description: Build the quiz screen without adding quiz behaviour
-agent: agent
+tools: ['edit', 'search', 'runCommands']
 model: GPT-5.6 Terra
 argument-hint: "Give your approved quiz name and two colours"
+handoffs:
+  - label: Add the questions
+    agent: add-questions
+    prompt: Add the four selected questions now that the page is built.
+    send: false
 ---
 
 # Build the page

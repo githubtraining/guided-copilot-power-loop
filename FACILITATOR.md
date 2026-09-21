@@ -21,7 +21,7 @@ the quiz for them.
 - An empty question file
 - An empty JavaScript behaviour file
 - A facilitator-checked question bank
-- Six guided Copilot prompt files
+- Seven guided Copilot custom agents, chained together with handoff buttons
 
 The blank browser page is intentional.
 
@@ -31,14 +31,14 @@ The blank browser page is intentional.
 | --- | --- |
 | 0–5 | Open Codespace, run the server, and confirm the page is blank |
 | 5–10 | Facilitator demonstrates vague versus checkable prompts |
-| 10–18 | Read and run `/plan-quiz`; refine and approve the plan |
-| 18–28 | Read and run `/build-page`; inspect HTML and CSS |
-| 28–36 | Read and run `/add-questions`; inspect the data |
-| 36–50 | Read and run `/build-quiz`; test the complete flow |
-| 50–55 | Run `/check-quiz` and `/fix-one-problem` if needed |
-| 55–60 | Optional finishing touch, neighbour showcase, and reflection |
+| 10–18 | Read and select **plan-quiz**; refine and approve the plan |
+| 18–28 | Follow the handoff to **build-page**; inspect HTML and CSS |
+| 28–36 | Follow the handoff to **add-questions**; inspect the data |
+| 36–50 | Follow the handoff to **build-quiz**; test the complete flow |
+| 50–55 | Follow the handoff to **check-quiz**, then **fix-one-problem** if needed |
+| 55–60 | Optional finishing touch via **add-finish**, neighbour showcase, and reflection |
 
-If the group needs more time, skip `/add-finish`. A working core quiz is the
+If the group needs more time, skip **add-finish**. A working core quiz is the
 goal.
 
 ## Facilitator demonstration
@@ -61,7 +61,8 @@ Ask students which request is easier to check and why.
 
 ## Human checkpoints
 
-Do not let students run every slash command without thinking. Pause after each:
+Do not let students click every handoff button without thinking. Pause after
+each:
 
 1. **Plan:** change or approve one decision.
 2. **Page:** point to one HTML element and one CSS rule.
@@ -74,7 +75,8 @@ Do not let students run every slash command without thinking. Pause after each:
 1. Create a fresh Codespace.
 2. Confirm the server starts automatically and the first browser page is blank.
 3. Confirm `npm run check` passes before students begin.
-4. Confirm all prompt files appear as slash commands.
+4. Confirm all custom agents appear in the agent picker and their handoff
+   buttons work.
 5. Complete the full sequence with the approved versatile model.
 6. Confirm the completed result fits within the session time.
 7. Confirm powerful models are unavailable.
@@ -85,15 +87,15 @@ Do not let students run every slash command without thinking. Pause after each:
 
 ## Recovery
 
-- If the page is blank before `/build-page`, everything is working.
+- If the page is blank before **build-page**, everything is working.
 - If the preview does not open, run `npm start` and open port `8000`.
 - The `start` script checks whether port `8000` is already serving the app, so
   it is safe to run again.
 - If question validation fails, check the four selected entries against
   `QUESTION-BANK.md`.
 - If the quiz does not respond, ask the student to describe expected and actual
-  behaviour to `/fix-one-problem`.
-- If a student is behind at minute 45, help them finish `/build-quiz` and skip
+  behaviour to the **fix-one-problem** agent.
+- If a student is behind at minute 45, help them finish **build-quiz** and skip
   all optional work.
 
 ## Success criteria
@@ -108,5 +110,5 @@ A student succeeds when they can show a working quiz and explain:
 ## Product references
 
 - [GitHub Copilot best practices](https://docs.github.com/en/copilot/get-started/best-practices)
-- [VS Code prompt files](https://code.visualstudio.com/docs/agent-customization/prompt-files)
+- [VS Code custom agents](https://code.visualstudio.com/docs/agent-customization/custom-agents)
 - [Codespaces port forwarding](https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace)

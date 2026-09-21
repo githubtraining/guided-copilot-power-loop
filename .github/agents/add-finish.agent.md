@@ -1,9 +1,14 @@
 ---
 name: add-finish
 description: Add one optional finishing touch after the quiz works
-agent: agent
+tools: ['edit', 'search', 'runCommands']
 model: GPT-5.6 Terra
 argument-hint: "Choose timer, streak, confetti, or hint"
+handoffs:
+  - label: Re-check my quiz
+    agent: check-quiz
+    prompt: Check the finished quiz with the new feature.
+    send: false
 ---
 
 # Add one finishing touch

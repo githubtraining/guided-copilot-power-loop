@@ -1,9 +1,14 @@
 ---
 name: fix-one-problem
 description: Fix one problem in the quiz the student built
-agent: agent
+tools: ['edit', 'search', 'runCommands']
 model: GPT-5.6 Terra
 argument-hint: "Describe what you expected and what actually happened"
+handoffs:
+  - label: Re-check my quiz
+    agent: check-quiz
+    prompt: Check the quiz again after the fix.
+    send: false
 ---
 
 # Fix one problem

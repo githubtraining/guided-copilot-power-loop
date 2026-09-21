@@ -1,9 +1,14 @@
 ---
 name: plan-quiz
 description: Plan the quiz before writing code
-agent: plan
+tools: ['search']
 model: GPT-5.6 Terra
 argument-hint: "Choose a name, colours, and four question IDs"
+handoffs:
+  - label: Build the page
+    agent: build-page
+    prompt: Build the quiz page based on the plan approved above.
+    send: false
 ---
 
 # Plan my quiz
