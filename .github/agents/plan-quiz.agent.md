@@ -3,7 +3,7 @@ name: plan-quiz
 description: Plan the quiz before writing code
 tools: ['search']
 model: mai-code-flash
-argument-hint: "Choose a name, colours, and four question IDs"
+argument-hint: "Choose a quiz name and two colours"
 handoffs:
   - label: Build the page
     agent: build-page
@@ -19,16 +19,14 @@ agent prompt and the listed project files only.
 Important: Ask the student for the required details before doing anything else.
 Ask for one detail per message. Never combine student questions in one message.
 
-Ask the student these three questions in this order, waiting for each answer
+Ask the student these two questions in this order, waiting for each answer
 before asking the next:
 
 1. Ask for a quiz name.
 2. Ask for two main colours.
-3. Ask for four question IDs from `QUESTION-BANK.md`.
 
-Do not edit any files until all three items have been provided.
+Do not edit any files until both items have been provided.
 Do not assume a quiz name or colours.
-Do not invent question IDs.
 Do not start building the quiz before the student answers.
 
 Then write a short plan with exactly three build steps:

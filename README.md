@@ -64,9 +64,8 @@ Help me plan my quiz.
 5. Answer Copilot's questions:
    - Your quiz name
    - Two main colours
-   - Four question letters from `QUESTION-BANK.md`
 6. Read the plan. Ask Copilot to change anything you do not like.
-7. Check that the plan uses your quiz name, colours and four question letters.
+7. Check that the plan uses your quiz name and colours.
 8. When you are happy with it, tell Copilot:
 
 ```text
@@ -114,7 +113,7 @@ Take note of:
 
 1. Check that 🤖 **`add-questions`** is selected. If it is not, select it from the agent picker.
 
-2. If the handoff did not provide a message, type:
+2. Type four question letters from `QUESTION-BANK.md`, for example:
 
    ```text
    Add these four questions: A, C, F and H.

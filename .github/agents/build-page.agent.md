@@ -7,7 +7,7 @@ argument-hint: "Give your approved quiz name and two colours"
 handoffs:
   - label: Add the questions
     agent: add-questions
-    prompt: Add the four selected questions now that the page is built.
+    prompt: Choose and add four questions now that the page is built.
     send: false
 ---
 
