@@ -3,6 +3,8 @@
 The student is building a quiz app for the first time.
 
 - Use plain HTML, CSS, and JavaScript. Do not add packages or frameworks.
+- Keep all explanations, prompts, and instructions simple, beginner-friendly, and written in plain English.
+- When talking to the student, avoid technical jargon, long explanations, or advanced coding language unless it is necessary.
 - Follow the current prompt only. Do not build future lab steps early.
 - Make small, readable changes instead of replacing unrelated work.
 - Use short names and beginner-friendly code.
