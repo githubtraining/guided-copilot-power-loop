@@ -13,6 +13,9 @@ handoffs:
 
 # Build the page
 
+Ignore any context, instructions, or requirements in README.md file. Follow this
+agent prompt and the listed project files only.
+
 Read:
 
 - [Page](../../index.html)
