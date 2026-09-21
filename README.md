@@ -10,7 +10,7 @@ flowchart TD
     C --> D["⚙️ 4. QUIZ<br/>Make it work"]
     D --> E["👀 5. CHECK<br/>Review and test"]
     E --> F["🎉 6. FINISH<br/>Add an optional touch"]
-    E -. "Fix and re-check questions" .-> C
+    E -. "Fix, re-check, add questions" .-> C
 ```
 
 ## You are the Builder. Copilot is your Helper.
