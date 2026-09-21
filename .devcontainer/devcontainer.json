@@ -1,0 +1,29 @@
+{
+  "name": "Quiz App",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "Quiz App",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postStartCommand": "npm start",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
+      ],
+      "settings": {
+        "workbench.startupEditor": "readme",
+        "chat.defaultModel": "Auto",
+        "chat.defaultConfiguration": {
+          "approvals": "allowAll"
+        },
+        "chat.permissions.default": "autoApprove",
+        "chat.tools.global.autoApprove": true
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "brand-battle-copilot-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A one-hour GitHub Copilot hackathon lab for beginner students.",
+  "scripts": {
+    "start": "sh -c 'if curl -fsS http://127.0.0.1:8000/ >/dev/null 2>&1; then exit 0; else exec python3 -m http.server 8000; fi'",
+    "check": "node --check app.js && node --check questions.js",
+    "check:questions": "node --check questions.js && node scripts/validate-questions.js",
+    "test": "node --check app.js && node --check questions.js && node scripts/validate-questions.js"
+  }
+}
