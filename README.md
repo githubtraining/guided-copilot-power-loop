@@ -18,6 +18,8 @@ flowchart TD
 Copilot cannot guess exactly what you want. You need to give it clear
 instructions, like you would when explaining a task to a teammate.
 
+<img src="https://octodex.github.com/images/neurocats_FULL.png" alt="Neurocats" width="320">
+
 Meet your **Copilot agents team**! Each agent has one job:
 
 - 🤖 **plan-quiz** is the team planner. It helps you choose what to build.
@@ -159,15 +161,7 @@ Take note of:
    ```
 
 3. Wait for Copilot to finish building the quiz.
-4. Read Copilot's explanation of the main functions in `app.js`. Ask Copilot questions
-   if anything is unclear.
-5. Test the quiz:
-   1. Start the quiz.
-   2. Choose one wrong answer.
-   3. Choose one correct answer on the next question.
-   4. Finish all four questions.
-   5. Check the final score.
-   6. Restart and check that the score returns to zero.
+
 ## 👀 5. CHECK and 🧪 TEST the finished quiz — 10 minutes
 
 Open and read
@@ -185,37 +179,48 @@ Take note of:
 
    > 🤖 **`check-quiz`**
 
+   Then type:
+
+   ```text
+   Check my quiz against the requirements.
+   ```
+
 2. Read the list marked **PASS** or **FIX**.
-3. Test each item yourself. Do not trust a PASS until you have seen it work.
-4. If something does not work, open the agent picker and choose:
+3. If something does not work, open the agent picker and choose:
 
    > 🤖 **`fix-one-problem`**
 
-5. Type:
+4. Type the message below, and press **Submit**:
 
    ```text
    Fix this problem. I expected [what should happen], but [what happened].
    ```
 
-6. Press **Submit**. If Copilot asks, tell it:
-
-   - What you expected
-   - What actually happened
-
-7. Test the fix before moving on.
-8. When it works, open the agent picker and choose:
+5. Open the agent picker and choose:
 
    > 🤖 **`check-quiz`**
 
-   Then type:
+   Then type the message below, and press **Submit**:
 
    ```text
    Re-check my quiz against the requirements.
    ```
 
-9. Press **Submit**.
+## 🎉 6. Finish and show — 5 minutes
 
-### Add another question
+The quiz is complete and now ready to use.
+
+Test the quiz:
+   1. Start the quiz.
+   2. Choose one wrong answer.
+   3. Choose one correct answer on the next question.
+   4. Finish all four questions.
+   5. Check the final score.
+   6. Restart and check that the score returns to zero.
+
+<img src="https://octodex.github.com/images/mona-the-rivetertocat.png" alt="Mona the Rivetertocat" width="240">
+
+### Optional: Add another question
 
 If you want to add another question after checking the quiz:
 
@@ -232,16 +237,6 @@ If you want to add another question after checking the quiz:
    Replace `B` with one new question ID.
 3. Press **Submit**. Keep the existing questions; this adds one more.
 
-## 🎉 6. Finish and show — 5 minutes
-
-If you choose to add a finishing touch, open and read
-[`add-finish.agent.md`](.github/agents/add-finish.agent.md).
-
-Take note of:
-
-- Which optional feature you want
-- Which files Copilot may change
-- How you will test the feature
 
 ### Optional finishing touch
 
