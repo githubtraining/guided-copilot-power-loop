@@ -58,9 +58,9 @@ Open the [`question bank`](QUESTION-BANK.md). Choose four letters, such as
 
 4. Type the message below, then press **Submit**:
 
-```text
-Help me plan my quiz.
-```
+   ```text
+   Help me plan my quiz.
+   ```
 
 5. Answer Copilot's questions:
    - Your quiz name
