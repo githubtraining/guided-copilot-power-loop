@@ -21,7 +21,8 @@ the quiz for them.
 - An empty question file
 - An empty JavaScript behaviour file
 - A facilitator-checked question bank
-- Seven guided Copilot custom agents, chained together with handoff buttons
+- Seven guided Copilot custom agents, run through the agent picker with manual
+  prompts
 
 The blank browser page is intentional.
 
@@ -32,10 +33,10 @@ The blank browser page is intentional.
 | 0–5 | Open Codespace, run the server, and confirm the page is blank |
 | 5–10 | Facilitator demonstrates vague versus checkable prompts |
 | 10–18 | Read and select **plan-quiz**; refine and approve the plan |
-| 18–28 | Follow the handoff to **build-page**; inspect HTML and CSS |
-| 28–36 | Follow the handoff to **add-questions**; inspect the data |
-| 36–50 | Follow the handoff to **build-quiz**; test the complete flow |
-| 50–55 | Follow the handoff to **check-quiz**, then **fix-one-problem** if needed |
+| 18–28 | Select **build-page** in the agent picker; inspect HTML and CSS |
+| 28–36 | Select **add-questions** in the agent picker; inspect the data |
+| 36–50 | Select **build-quiz** in the agent picker; test the complete flow |
+| 50–55 | Select **check-quiz**, then **fix-one-problem** if needed |
 | 55–60 | Optional finishing touch via **add-finish**, neighbour showcase, and reflection |
 
 If the group needs more time, skip **add-finish**. A working core quiz is the
@@ -61,8 +62,7 @@ Ask students which request is easier to check and why.
 
 ## Human checkpoints
 
-Do not let students click every handoff button without thinking. Pause after
-each:
+Do not let students run every prompt without thinking. Pause after each:
 
 1. **Plan:** change or approve one decision.
 2. **Page:** point to one HTML element and one CSS rule.
@@ -75,14 +75,14 @@ each:
 1. Create a fresh Codespace.
 2. Confirm the server starts automatically and the first browser page is blank.
 3. Confirm `npm run check` passes before students begin.
-4. Confirm all custom agents appear in the agent picker and their handoff
-   buttons work.
-5. Complete the full sequence with the approved versatile model.
-6. Confirm the completed result fits within the session time.
-7. Confirm powerful models are unavailable.
-8. Set a $30 user-level hard budget for each student.
-9. Enable **Stop usage when budget limit is reached**.
-10. Keep one completed example for facilitator recovery, but do not include it
+4. Confirm all custom agents appear in the agent picker.
+5. Confirm each manual prompt in `README.md` starts the correct next agent.
+6. Complete the full sequence with the approved versatile model.
+7. Confirm the completed result fits within the session time.
+8. Confirm powerful models are unavailable.
+9. Set a $30 user-level hard budget for each student.
+10. Enable **Stop usage when budget limit is reached**.
+11. Keep one completed example for facilitator recovery, but do not include it
     in the student starter branch.
 
 ## Recovery

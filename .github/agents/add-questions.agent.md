@@ -3,12 +3,6 @@ name: add-questions
 description: Create the question data chosen by the student
 tools: ['edit', 'search', 'runCommands']
 model: mai-code-flash
-argument-hint: "Give four IDs for a new quiz, or one ID to add later"
-handoffs:
-  - label: Make the quiz work
-    agent: build-quiz
-    prompt: Add the JavaScript behaviour now that the page and questions exist.
-    send: true
 ---
 
 # Add my questions
@@ -60,5 +54,11 @@ Report:
 2. What each part of one question means
 3. Whether the check passed
 4. Why the browser has not become interactive yet
+5. The next step:
+
+```text
+Open the agent picker, choose 🤖 build-quiz, and send:
+Add the JavaScript behaviour now that the page and questions exist.
+```
 
 Stop after adding the question data.

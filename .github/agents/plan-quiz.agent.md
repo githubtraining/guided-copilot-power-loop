@@ -3,12 +3,6 @@ name: plan-quiz
 description: Plan the quiz before writing code
 tools: ['search']
 model: mai-code-flash
-argument-hint: "Choose a quiz name and two colours"
-handoffs:
-  - label: Build the page
-    agent: build-page
-    prompt: Build the quiz page based on the plan approved above.
-    send: true
 ---
 
 # Plan my quiz
@@ -45,7 +39,18 @@ Keep the plan short and easy to understand.
 
 Finish by asking the student to approve or change the plan.
 
-Important: do not hand off until the student approves the plan.
+Important: do not continue until the student approves the plan.
 When the student says: "I approve this plan." or "I approve the plan.",
-then immediately present the "Build the page" handoff to the next agent.
+do not build the page. Instead, tell the student to:
+
+1. Open the agent picker.
+2. Choose `build-page`.
+3. Send this message, filling in the approved quiz name and colours:
+
+```text
+Build the quiz page for my approved plan.
+Quiz name: [quiz name]
+Colours: [two colours]
+```
+
 Do not skip the approval step and do not continue without it.

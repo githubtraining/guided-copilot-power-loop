@@ -3,12 +3,6 @@ name: build-page
 description: Build the quiz screen without adding quiz behaviour
 tools: ['edit', 'search', 'runCommands']
 model: mai-code-flash
-argument-hint: "Give your approved quiz name and two colours"
-handoffs:
-  - label: Add the questions
-    agent: add-questions
-    prompt: Choose and add four questions now that the page is built.
-    send: false
 ---
 
 # Build the page
@@ -60,5 +54,11 @@ Report:
 3. One HTML element and one CSS rule for the student to inspect
 4. Whether the check passed
 5. What the student should see after refreshing the browser
+6. The next step:
+
+```text
+Open the agent picker, choose 🤖 add-questions, and send:
+Add these four questions: [your four question IDs].
+```
 
 Stop after building the page.

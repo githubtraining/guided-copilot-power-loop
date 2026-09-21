@@ -3,12 +3,6 @@ name: fix-one-problem
 description: Fix one problem in the quiz the student built
 tools: ['edit', 'search', 'runCommands']
 model: mai-code-flash
-argument-hint: "Describe what you expected and what actually happened"
-handoffs:
-  - label: Re-check my quiz
-    agent: check-quiz
-    prompt: Check the quiz again after the fix.
-    send: false
 ---
 
 # Fix one problem
@@ -49,5 +43,11 @@ Report:
 - Fix made
 - Which check was run and whether it passed
 - Exact browser steps to confirm the fix
+- The next step:
+
+```text
+Open the agent picker, choose 🤖 check-quiz, and send:
+Check the quiz again after the fix.
+```
 
 Stop after fixing this one problem.

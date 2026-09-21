@@ -27,10 +27,9 @@ Meet your **Copilot agents team**! Each agent has one job:
 - 🤖 **check-quiz** checks the finished quiz.
 - 🤖 **add-finish** adds one optional finishing touch.
 
-Each agent finishes with a **handoff button** that takes you straight to the
-next agent in the loop. When you select the first agent, type a request before
-pressing **Submit**. After that, use the handoff buttons and follow any prompt
-shown in the chat box.
+You will move through the agents yourself. For each step, open the
+**agent picker** near the chat input, choose the agent named in the
+instructions, type the prompt shown, and press **Submit**.
 
 ## 🧠 1. PLAN your quiz — 8 minutes
 
@@ -66,14 +65,6 @@ Help me plan my quiz.
    - Two main colours
 6. Read the plan. Ask Copilot to change anything you do not like.
 7. Check that the plan uses your quiz name and colours.
-8. When you are happy with it, tell Copilot:
-
-```text
-I approve this plan.
-```
-
-9. Select the **Build the page** handoff button that appears under Copilot's
-   reply. If a prompt appears, press **Submit**.
 
 ## 🛠️ 2. BUILD the page — 10 minutes
 
@@ -89,13 +80,20 @@ Take note of:
 
 ### Start here
 
-1. Check that 🤖 **`build-page`** is selected. If it is not, select it from the agent picker.
+1. Open the agent picker and choose:
 
-2. Look at the files Copilot changed. Find your quiz name in `index.html` and
+   > 🤖 **`build-page`**
+
+2. Type the message below, then press **Submit**:
+
+   ```text
+   Build the quiz page for my plan.
+   ```
+
+3. Look at the files Copilot changed. Find your quiz name in `index.html` and
    your colours in `styles.css`.
-3. Refresh the browser. You should see your quiz design. The buttons will not
+4. Refresh the browser. You should see your quiz design. The buttons will not
    work yet because you have not built the quiz behaviour.
-4. Select the **Add the questions** handoff button.
 
 ## 🛠️ 3. BUILD the questions — 8 minutes
 
@@ -111,7 +109,9 @@ Take note of:
 
 ### Start here
 
-1. Check that 🤖 **`add-questions`** is selected. If it is not, select it from the agent picker.
+1. Open the agent picker and choose:
+
+   > 🤖 **`add-questions`**
 
 2. Type four question letters from `QUESTION-BANK.md`, for example:
 
@@ -134,8 +134,6 @@ Take note of:
 The browser will not change yet. The questions are ready, but the quiz
 behaviour has not been built.
 
-6. Select the **Make the quiz work** handoff button.
-
 ## 🛠️ 4. BUILD the quiz behaviour — 14 minutes
 
 Open and read
@@ -150,27 +148,26 @@ Take note of:
 
 ### Start here
 
-1. Check that 🤖 **`build-quiz`** is selected. If it is not, select it from the agent picker.
+1. Open the agent picker and choose:
 
-2. Wait for Copilot to finish building the quiz.
-3. Read Copilot's explanation of the main functions in `app.js`. Ask Copilot questions
+   > 🤖 **`build-quiz`**
+
+2. Type the message below, then press **Submit**:
+
+   ```text
+   Add the JavaScript behaviour now that the page and questions exist.
+   ```
+
+3. Wait for Copilot to finish building the quiz.
+4. Read Copilot's explanation of the main functions in `app.js`. Ask Copilot questions
    if anything is unclear.
-4. Test the quiz:
+5. Test the quiz:
    1. Start the quiz.
    2. Choose one wrong answer.
    3. Choose one correct answer on the next question.
    4. Finish all four questions.
    5. Check the final score.
    6. Restart and check that the score returns to zero.
-5. Select the **Check my quiz** handoff button.
-6. If the message box is empty, type:
-
-   ```text
-   Check my finished quiz against the requirements.
-   ```
-
-7. Press **Submit**.
-
 ## 👀 5. CHECK and 🧪 TEST the finished quiz — 10 minutes
 
 Open and read
@@ -184,28 +181,37 @@ Take note of:
 
 ### Start here
 
-1. Check that 🤖 **`check-quiz`** is selected. If it is not, select it from the agent picker.
+1. Open the agent picker and choose:
+
+   > 🤖 **`check-quiz`**
 
 2. Read the list marked **PASS** or **FIX**.
 3. Test each item yourself. Do not trust a PASS until you have seen it work.
-4. If something does not work, select the **Fix one problem** handoff button.
-5. If the message box is empty, type:
+4. If something does not work, open the agent picker and choose:
+
+   > 🤖 **`fix-one-problem`**
+
+5. Type:
 
    ```text
    Fix this problem. I expected [what should happen], but [what happened].
    ```
 
-6. Tell Copilot:
+6. Press **Submit**. If Copilot asks, tell it:
 
    - What you expected
    - What actually happened
 
 7. Test the fix before moving on.
-8. When it works, choose **check-quiz** from the agent picker and type:
+8. When it works, open the agent picker and choose:
 
-```text
-Re-check my quiz against the requirements.
-```
+   > 🤖 **`check-quiz`**
+
+   Then type:
+
+   ```text
+   Re-check my quiz against the requirements.
+   ```
 
 9. Press **Submit**.
 
@@ -213,17 +219,18 @@ Re-check my quiz against the requirements.
 
 If you want to add another question after checking the quiz:
 
-1. Select **Add one question**.
-2. Check that 🤖 **`add-questions`** is selected. If it is not, select it from
-   the agent picker.
-3. If the message box is empty, type:
+1. Open the agent picker and choose:
+
+   > 🤖 **`add-questions`**
+
+2. Type:
 
    ```text
    Add question B from QUESTION-BANK.md. Keep all existing questions.
    ```
 
    Replace `B` with one new question ID.
-4. Press **Submit**. Keep the existing questions; this adds one more.
+3. Press **Submit**. Keep the existing questions; this adds one more.
 
 ## 🎉 6. Finish and show — 5 minutes
 
@@ -238,17 +245,17 @@ Take note of:
 
 ### Optional finishing touch
 
-1. If your quiz works and you have time, select the **Add a finishing touch**
-   handoff button from check-quiz.
-2. Check that 🤖 **`add-finish`** is selected. If it is not, select it from
-   the agent picker.
-3. If the message box is empty, type:
+1. If your quiz works and you have time, open the agent picker and choose:
+
+   > 🤖 **`add-finish`**
+
+2. Type:
 
    ```text
    Add a [timer, streak, confetti, or hint] to my quiz.
    ```
 
-4. Press **Submit**.
+3. Press **Submit**.
 
 Show your quiz to another student. Explain one piece of code Copilot helped you
 build.

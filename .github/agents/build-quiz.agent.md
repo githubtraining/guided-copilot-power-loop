@@ -3,11 +3,6 @@ name: build-quiz
 description: Add the JavaScript that makes the quiz work
 tools: ['edit', 'search', 'runCommands']
 model: mai-code-flash
-handoffs:
-  - label: Check my quiz
-    agent: check-quiz
-    prompt: Check the finished quiz against the requirements list.
-    send: false
 ---
 
 # Make the quiz work
@@ -59,5 +54,11 @@ Report:
 3. Whether the test passed
 4. Exact steps for testing a correct answer, an incorrect answer, results, and
    restart
+5. The next step:
+
+```text
+Open the agent picker, choose 🤖 check-quiz, and send:
+Check the finished quiz against the requirements list.
+```
 
 Stop when the core quiz works.

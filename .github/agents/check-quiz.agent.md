@@ -3,19 +3,6 @@ name: check-quiz
 description: Check the finished quiz without changing it
 tools: ['search']
 model: mai-code-flash
-handoffs:
-  - label: Fix one problem
-    agent: fix-one-problem
-    prompt: Fix the first item marked FIX above.
-    send: false
-  - label: Add one question
-    agent: add-questions
-    prompt: Add one new question from QUESTION-BANK.md without removing the existing questions.
-    send: false
-  - label: Add a finishing touch
-    agent: add-finish
-    prompt: Add one finishing touch now that the quiz passes every check.
-    send: false
 ---
 
 # Check my finished quiz
@@ -61,4 +48,14 @@ Use one short row per check.
 Finish with either:
 
 - **Ready to show**
-- **Select the "Fix one problem" handoff for the first item marked FIX**
+- **Open the agent picker, choose `fix-one-problem`, and send: `Fix the first item marked FIX above.`**
+
+If every check passes, also tell the student these optional next steps:
+
+```text
+To add one more question, open the agent picker, choose 🤖 add-questions, and send:
+Add question [ID] from QUESTION-BANK.md. Keep all existing questions.
+
+To add one finishing touch, open the agent picker, choose 🤖 add-finish, and send:
+Add a [timer, streak, confetti, or hint] to my quiz.
+```
