@@ -1,4 +1,4 @@
-# Brand Battle question bank
+# Brand quiz question bank
 
 Choose four IDs. Include at least one **catchphrase** and one **emoji** clue.
 The emoji clues are workshop-created puzzles, not official brand slogans.
@@ -102,10 +102,3 @@ The emoji clues are workshop-created puzzles, not official brand slogans.
   correctAnswer: "Bunnings"
 }
 ```
-
-## Catchphrase references
-
-- A: [McDonald's — “i'm lovin' it”](https://corporate.mcdonalds.com/corpmcd/our-stories/article/im-lovin-it.html)
-- B: [Nike — The history of “Just Do It”](https://www.nike.com/a/just-do-it-history)
-- C: [KitKat](https://www.kitkat.com/)
-- D: [Red Bull](https://www.redbull.com/)
