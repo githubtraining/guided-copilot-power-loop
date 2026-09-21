@@ -2,7 +2,6 @@
 name: add-questions
 description: Create the question data chosen by the student
 tools: ['edit', 'search', 'runCommands']
-model: mai-code-flash
 ---
 
 # Add my questions

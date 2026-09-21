@@ -2,7 +2,6 @@
 name: check-quiz
 description: Check the finished quiz without changing it
 tools: ['search']
-model: mai-code-flash
 ---
 
 # Check my finished quiz

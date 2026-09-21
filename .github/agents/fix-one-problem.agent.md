@@ -2,7 +2,6 @@
 name: fix-one-problem
 description: Fix one problem in the quiz the student built
 tools: ['edit', 'search', 'runCommands']
-model: mai-code-flash
 ---
 
 # Fix one problem

@@ -2,7 +2,6 @@
 name: add-finish
 description: Add one optional finishing touch after the quiz works
 tools: ['edit', 'search', 'runCommands']
-model: mai-code-flash
 ---
 
 # Add one finishing touch

@@ -2,7 +2,6 @@
 name: build-quiz
 description: Add the JavaScript that makes the quiz work
 tools: ['edit', 'search', 'runCommands']
-model: mai-code-flash
 ---
 
 # Make the quiz work

@@ -2,7 +2,6 @@
 name: plan-quiz
 description: Plan the quiz before writing code
 tools: ['search']
-model: mai-code-flash
 ---
 
 # Plan my quiz

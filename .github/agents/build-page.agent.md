@@ -2,7 +2,6 @@
 name: build-page
 description: Build the quiz screen without adding quiz behaviour
 tools: ['edit', 'search', 'runCommands']
-model: mai-code-flash
 ---
 
 # Build the page
