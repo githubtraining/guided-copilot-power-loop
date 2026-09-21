@@ -22,6 +22,10 @@ Read:
 - [Behaviour file](../../app.js)
 - [Project rules](../copilot-instructions.md)
 
+If student input is needed, ask only one question per message and wait for the
+answer before asking another question. Never combine questions in one
+interaction.
+
 Build the quiz behaviour in `app.js`.
 
 Required behaviour:

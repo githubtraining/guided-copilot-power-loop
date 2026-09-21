@@ -20,7 +20,9 @@ Only run this prompt after the core quiz works.
 
 Read the four app files and the project rules.
 
-Ask the student to choose one:
+Ask the student to choose one in a single question. If any follow-up detail is
+needed, ask it in a separate message after receiving the choice. Never combine
+student questions in one interaction:
 
 - **timer:** ten seconds for each question
 - **streak:** count correct answers in a row

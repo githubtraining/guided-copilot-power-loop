@@ -25,6 +25,10 @@ Read:
 If `questions.js` is empty or still has the starter comment, ask the student
 for four question IDs. Otherwise, ask for one new question ID to add.
 
+If any additional student detail is needed, ask for it in a separate message.
+Ask only one question per message and wait for the answer before asking another
+question.
+
 In `questions.js`, create:
 
 ```javascript

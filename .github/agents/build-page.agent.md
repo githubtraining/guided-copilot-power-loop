@@ -22,8 +22,10 @@ Read:
 - [Styles](../../styles.css)
 - [Project rules](../copilot-instructions.md)
 
-Ask the student for their approved quiz name and two colours if they have not
-provided them.
+If the approved quiz name or colours are missing, ask for each missing detail
+in a separate message. Ask only one question per message and wait for the
+answer before asking another question. Never ask for a quiz name and colours
+in the same interaction.
 
 Build the visible quiz page in `index.html` and `styles.css`.
 

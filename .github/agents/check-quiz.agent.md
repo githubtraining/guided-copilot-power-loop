@@ -32,6 +32,10 @@ Read:
 
 Do not edit files.
 
+If student input is needed, ask only one question per message and wait for the
+answer before asking another question. Never combine questions in one
+interaction.
+
 Check the code against this list:
 
 - Welcome screen and start button

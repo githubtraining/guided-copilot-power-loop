@@ -24,13 +24,13 @@ Read:
 - [Behaviour](../../app.js)
 - [Project rules](../copilot-instructions.md)
 
-The student expected:
+Ask the student these two questions in separate interactions, waiting for each
+answer before asking the next:
 
-${input:expected:What should have happened?}
+1. "What should have happened?"
+2. "What did you see instead?"
 
-What actually happened:
-
-${input:actual:What did you see instead?}
+Do not ask both questions in one interaction.
 
 Follow these steps:
 
