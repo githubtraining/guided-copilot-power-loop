@@ -33,7 +33,7 @@ You will move through the agents yourself. For each step, open the
 **agent picker** near the chat input, choose the agent named in the
 instructions, type the prompt shown, and press **Submit**.
 
-## 🧠 1. PLAN your quiz — 8 minutes
+## 🧠 1. PLAN your quiz
 
 Open and read
 [`plan-quiz.agent.md`](.github/agents/plan-quiz.agent.md).
@@ -68,7 +68,7 @@ Open the [`question bank`](QUESTION-BANK.md). Choose four letters, such as
 6. Read the plan. Ask Copilot to change anything you do not like.
 7. Check that the plan uses your quiz name and colours.
 
-## 🛠️ 2. BUILD the page — 10 minutes
+## 🛠️ 2. BUILD the page
 
 Open and read
 [`build-page.agent.md`](.github/agents/build-page.agent.md).
@@ -97,7 +97,7 @@ Take note of:
 4. Refresh the browser. You should see your quiz design. The buttons will not
    work yet because you have not built the quiz behaviour.
 
-## 🛠️ 3. BUILD the questions — 8 minutes
+## 🛠️ 3. BUILD the questions
 
 Open and read
 [`add-questions.agent.md`](.github/agents/add-questions.agent.md).
@@ -136,7 +136,7 @@ Take note of:
 The browser will not change yet. The questions are ready, but the quiz
 behaviour has not been built.
 
-## 🛠️ 4. BUILD the quiz behaviour — 14 minutes
+## 🛠️ 4. BUILD the quiz behaviour
 
 Open and read
 [`build-quiz.agent.md`](.github/agents/build-quiz.agent.md).
