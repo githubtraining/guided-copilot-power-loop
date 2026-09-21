@@ -18,13 +18,14 @@ flowchart TD
 Copilot cannot guess exactly what you want. You need to give it clear
 instructions, like you would when explaining a task to a teammate.
 
-In this exercise, the instructions are pre-made for you as **custom agents**.
-Each of them tells Copilot:
+Meet your **Copilot agents team**! Each agent has one job:
 
-- What to build
-- Which files to look at
-- What rules to follow
-- How to check its work
+- 🤖 **plan-quiz** is the team planner. It helps you choose what to build.
+- 🤖 **build-page** creates the quiz screen.
+- 🤖 **add-questions** adds your questions.
+- 🤖 **build-quiz** makes the buttons and quiz behavior work.
+- 🤖 **check-quiz** checks the finished quiz.
+- 🤖 **add-finish** adds one optional finishing touch.
 
 Each agent finishes with a **handoff button** that takes you straight to the
 next agent in the loop. When you select the first agent, type a request before
@@ -80,7 +81,14 @@ I approve this plan.
 Open and read
 [`build-page.agent.md`](.github/agents/build-page.agent.md).
 
-### Start this step
+Take note of:
+
+- What page elements Copilot must build
+- Which files it will change
+- What it must not change
+- How you will test the page
+
+### Start here
 
 1. Check that 🤖 **`build-page`** is selected. If it is not, select it from the agent picker.
 
@@ -95,7 +103,14 @@ Open and read
 Open and read
 [`add-questions.agent.md`](.github/agents/add-questions.agent.md).
 
-### Start this step
+Take note of:
+
+- How many questions to add
+- What each question must include
+- Which file Copilot will change
+- How you will check the question data
+
+### Start here
 
 1. Check that 🤖 **`add-questions`** is selected. If it is not, select it from the agent picker.
 
@@ -127,12 +142,19 @@ behaviour has not been built.
 Open and read
 [`build-quiz.agent.md`](.github/agents/build-quiz.agent.md).
 
-### Start this step
+Take note of:
+
+- What the quiz must do
+- Which file Copilot will change
+- What it must not change
+- How you will test the quiz
+
+### Start here
 
 1. Check that 🤖 **`build-quiz`** is selected. If it is not, select it from the agent picker.
 
 2. Wait for Copilot to finish building the quiz.
-3. Read Copilot's explanation of the main functions in `app.js`. Ask questions
+3. Read Copilot's explanation of the main functions in `app.js`. Ask Copilot questions
    if anything is unclear.
 4. Test the quiz:
    1. Start the quiz.
@@ -152,7 +174,16 @@ Open and read
 
 ## 👀 5. CHECK and 🧪 TEST the finished quiz — 10 minutes
 
-### Start this step
+Open and read
+[`check-quiz.agent.md`](.github/agents/check-quiz.agent.md).
+
+Take note of:
+
+- What Copilot will check
+- What Copilot must not change
+- How you will test the finished quiz
+
+### Start here
 
 1. Check that 🤖 **`check-quiz`** is selected. If it is not, select it from the agent picker.
 
@@ -167,8 +198,8 @@ Open and read
 
 6. Tell Copilot:
 
-- What you expected
-- What actually happened
+   - What you expected
+   - What actually happened
 
 7. Test the fix before moving on.
 8. When it works, choose **check-quiz** from the agent picker and type:
@@ -179,19 +210,32 @@ Re-check my quiz against the requirements.
 
 9. Press **Submit**.
 
+### Add another question
+
 If you want to add another question after checking the quiz:
 
 1. Select **Add one question**.
-2. If the message box is empty, type:
+2. Check that 🤖 **`add-questions`** is selected. If it is not, select it from
+   the agent picker.
+3. If the message box is empty, type:
 
    ```text
    Add question B from QUESTION-BANK.md. Keep all existing questions.
    ```
 
    Replace `B` with one new question ID.
-3. Press **Submit**. Keep the existing questions; this adds one more.
+4. Press **Submit**. Keep the existing questions; this adds one more.
 
 ## 🎉 6. Finish and show — 5 minutes
+
+If you choose to add a finishing touch, open and read
+[`add-finish.agent.md`](.github/agents/add-finish.agent.md).
+
+Take note of:
+
+- Which optional feature you want
+- Which files Copilot may change
+- How you will test the feature
 
 ### Optional finishing touch
 
