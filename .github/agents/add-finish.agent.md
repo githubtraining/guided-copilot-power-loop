@@ -2,7 +2,7 @@
 name: add-finish
 description: Add one optional finishing touch after the quiz works
 tools: ['edit', 'search', 'runCommands']
-model: GPT-5.6 Terra
+model: mai-code-flash
 argument-hint: "Choose timer, streak, confetti, or hint"
 handoffs:
   - label: Re-check my quiz

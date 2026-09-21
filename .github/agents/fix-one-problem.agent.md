@@ -2,7 +2,7 @@
 name: fix-one-problem
 description: Fix one problem in the quiz the student built
 tools: ['edit', 'search', 'runCommands']
-model: GPT-5.6 Terra
+model: mai-code-flash
 argument-hint: "Describe what you expected and what actually happened"
 handoffs:
   - label: Re-check my quiz

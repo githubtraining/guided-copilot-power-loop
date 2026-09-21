@@ -2,7 +2,7 @@
 name: check-quiz
 description: Check the finished quiz without changing it
 tools: ['search']
-model: GPT-5.6 Terra
+model: mai-code-flash
 handoffs:
   - label: Fix one problem
     agent: fix-one-problem

@@ -2,13 +2,13 @@
 name: plan-quiz
 description: Plan the quiz before writing code
 tools: ['search']
-model: GPT-5.6 Terra
+model: mai-code-flash
 argument-hint: "Choose a name, colours, and four question IDs"
 handoffs:
   - label: Build the page
     agent: build-page
     prompt: Build the quiz page based on the plan approved above.
-    send: false
+    send: true
 ---
 
 # Plan my quiz

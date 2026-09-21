@@ -2,7 +2,7 @@
 name: build-page
 description: Build the quiz screen without adding quiz behaviour
 tools: ['edit', 'search', 'runCommands']
-model: GPT-5.6 Terra
+model: mai-code-flash
 argument-hint: "Give your approved quiz name and two colours"
 handoffs:
   - label: Add the questions

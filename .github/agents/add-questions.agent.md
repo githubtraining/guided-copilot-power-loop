@@ -2,7 +2,7 @@
 name: add-questions
 description: Create the question data chosen by the student
 tools: ['edit', 'search', 'runCommands']
-model: GPT-5.6 Terra
+model: mai-code-flash
 argument-hint: "Give four IDs from QUESTION-BANK.md"
 handoffs:
   - label: Make the quiz work

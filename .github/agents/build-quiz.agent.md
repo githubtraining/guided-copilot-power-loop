@@ -2,7 +2,7 @@
 name: build-quiz
 description: Add the JavaScript that makes the quiz work
 tools: ['edit', 'search', 'runCommands']
-model: GPT-5.6 Terra
+model: mai-code-flash
 handoffs:
   - label: Check my quiz
     agent: check-quiz
