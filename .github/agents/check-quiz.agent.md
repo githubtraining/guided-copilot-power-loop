@@ -8,6 +8,10 @@ handoffs:
     agent: fix-one-problem
     prompt: Fix the first item marked FIX above.
     send: false
+  - label: Add one question
+    agent: add-questions
+    prompt: Add one new question from QUESTION-BANK.md without removing the existing questions.
+    send: false
   - label: Add a finishing touch
     agent: add-finish
     prompt: Add one finishing touch now that the quiz passes every check.
@@ -28,7 +32,7 @@ Do not edit files.
 Check the code against this list:
 
 - Welcome screen and start button
-- Four questions with four answers each
+- At least four questions with four answers each
 - At least one catchphrase and one emoji clue
 - Accessible text for emoji clues
 - Correct and incorrect feedback
